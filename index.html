@@ -441,9 +441,9 @@
     /* hero */
     .hero-content { grid-template-columns: 1fr; gap: 2rem; }
     .hero-right { display: none; } /* show mini version below title instead */
-    .hero-title { font-size: clamp(2.8rem, 13vw, 4.5rem); margin-bottom: 1.5rem; }
-    .hero-desc { font-size: 0.78rem; line-height: 1.9; }
-    .profile-chip { margin-bottom: 2rem; }
+    .hero-title { font-size: clamp(2rem, 10vw, 2.8rem); line-height: 1.05; margin-bottom: 1.2rem; }
+    .hero-desc { font-size: 0.75rem; line-height: 1.8; margin-bottom: 1.2rem; }
+    .profile-chip { margin-bottom: 1.5rem; }
     .hero-scroll { display: none; }
 
     /* mini profile strip shown on mobile (replaces hidden info card) */
@@ -464,11 +464,12 @@
     .mstrip-item svg { width: 11px; height: 11px; opacity: 0.6; }
 
     /* section titles */
-    .section-title { font-size: clamp(1.8rem, 9vw, 2.8rem); margin-bottom: 2.5rem; }
-
+    .section-title { font-size: clamp(1.6rem, 8vw, 2.2rem); margin-bottom: 2rem; }
+    section { padding: 3.5rem 1.25rem; }
+    #contact { padding: 4rem 1.25rem; }
     /* projects: single col */
     .projects-grid { grid-template-columns: 1fr; gap: 1px; }
-    .card-span-8, .card-span-4, .card-span-5, .card-span-7, .card-span-6 { grid-column: span 1; }
+    .card-span-8, .card-span-4, .card-span-5, .card-span-7, .card-span-6, .card-span-12 { grid-column: span 1; }
     .project-card { padding: 1.75rem; }
     .project-title { font-size: 1.15rem; }
     .project-desc { font-size: 0.74rem; }
@@ -671,7 +672,7 @@
     <!-- Bailey's -->
     <div class="project-card card-span-8" onmousemove="cardLight(event,this)">
       <div class="card-accent"></div>
-      <div class="project-num">01 / 06</div>
+      <div class="project-num">01 / 07</div>
       <svg class="project-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h8M8 14h5"/></svg>
       <h3 class="project-title">Bailey's WhatsApp Bot</h3>
       <p class="project-desc">Full-featured WhatsApp automation bot on @lumina-md/baileys. Plugin system with <strong>group management, AI chat via Groq, code formatter, table renderer</strong>, and autoAI smart rendering.</p>
@@ -692,7 +693,7 @@
     <!-- Yōkai -->
     <div class="project-card card-span-4" onmousemove="cardLight(event,this)">
       <div class="card-accent"></div>
-      <div class="project-num">02 / 06</div>
+      <div class="project-num">02 / 07</div>
       <svg class="project-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
       <h3 class="project-title">Yōkai</h3>
       <p class="project-desc">Manhwa &amp; manga reader. BacaKomik API with <strong>Firebase auth, MMKV storage</strong>, offline-first reading.</p>
@@ -712,7 +713,7 @@
     <!-- NefuSoft -->
     <div class="project-card card-span-5" onmousemove="cardLight(event,this)">
       <div class="card-accent"></div>
-      <div class="project-num">03 / 06</div>
+      <div class="project-num">03 / 07</div>
       <svg class="project-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
       <h3 class="project-title">NefuSoft Anime</h3>
       <p class="project-desc">Anime streaming with <strong>Jikan/MAL API</strong>, XP gamification, Google Sign-In, magazine-style UI. Expo SDK 51.</p>
@@ -732,7 +733,7 @@
     <!-- Claw -->
     <div class="project-card card-span-7" onmousemove="cardLight(event,this)">
       <div class="card-accent"></div>
-      <div class="project-num">04 / 06</div>
+      <div class="project-num">04 / 07</div>
       <svg class="project-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
       <h3 class="project-title">Claw — AI Agent UI</h3>
       <p class="project-desc">Custom interface for Claude coding agent. <strong>Tool use cards, browser tool support, history replay</strong>. Terracotta dark theme. Zero dependencies, raw HTML/JS.</p>
@@ -752,7 +753,7 @@
     <!-- AI Scraper -->
     <div class="project-card card-span-6" onmousemove="cardLight(event,this)">
       <div class="card-accent"></div>
-      <div class="project-num">05 / 06</div>
+      <div class="project-num">05 / 07</div>
       <svg class="project-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
       <h3 class="project-title">AI Endpoint Scraper</h3>
       <p class="project-desc">Node.js scrapers for free AI endpoints. <strong>Shodan hunting for exposed Ollama</strong>, pooled master with auto-fallback, HF Spaces support.</p>
@@ -772,7 +773,7 @@
     <!-- Lunar -->
     <div class="project-card card-span-6" onmousemove="cardLight(event,this)">
       <div class="card-accent"></div>
-      <div class="project-num">06 / 06</div>
+      <div class="project-num">06 / 07</div>
       <svg class="project-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       <h3 class="project-title">Lunar</h3>
       <p class="project-desc">Anime, film &amp; comics viewer. Custom <strong>cyan-blue material theme</strong>, redesigned BottomTabs, OTA fixes, image loading optimizations.</p>
@@ -786,6 +787,28 @@
         View
       </a>
       <svg class="project-visual-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </div>
+
+    <!-- Free AI API Aggregator -->
+    <div class="project-card card-span-12" onmousemove="cardLight(event,this)">
+      <div class="card-accent"></div>
+      <div class="project-num">07 / 07</div>
+      <svg class="project-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+      <h3 class="project-title">Free AI API Aggregator</h3>
+      <p class="project-desc">REST API wrapper aggregating <strong>dozens of free AI endpoints</strong> into one consistent interface. Auto-routes to live endpoints with automatic fallback on failure. Multi-provider support: Groq, HuggingFace Spaces, exposed Ollama instances, and custom scraped endpoints.</p>
+      <div class="project-tags">
+        <span class="tag orange">Node.js</span>
+        <span class="tag orange">Express</span>
+        <span class="tag">REST API</span>
+        <span class="tag">Multi-provider</span>
+        <span class="tag">Auto-fallback</span>
+        <span class="tag green">Open Source</span>
+      </div>
+      <a href="#" class="project-link">
+        <svg style="width:14px;height:14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        View Project
+      </a>
+      <svg class="project-visual-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
     </div>
 
   </div>
@@ -827,7 +850,7 @@
     </div>
 
     <div class="skills-right reveal">
-      <div class="stat-block"><div class="stat-num">6<span>+</span></div><div class="stat-label">Projects Shipped</div></div>
+      <div class="stat-block"><div class="stat-num">7<span>+</span></div><div class="stat-label">Projects Shipped</div></div>
       <div class="stat-block"><div class="stat-num">3<span>+</span></div><div class="stat-label">Years Indie Dev</div></div>
       <div class="stat-block"><div class="stat-num">100<span>%</span></div><div class="stat-label">Solo Built</div></div>
       <div class="stat-block"><div class="stat-num">∞</div><div class="stat-label">Shipped from Termux</div></div>
@@ -852,6 +875,7 @@
     <div class="about-right">
       <ul class="about-timeline">
         <li class="timeline-item"><span class="timeline-year">2026</span><div class="timeline-content"><h4>Yōkai Manhwa App</h4><p>Full manhwa reader with Firebase, MMKV, BacaKomik API.</p></div></li>
+        <li class="timeline-item"><span class="timeline-year">2025</span><div class="timeline-content"><h4>Free AI API Aggregator</h4><p>Multi-provider REST API wrapper with auto-routing and fallback across free LLM endpoints.</p></div></li>
         <li class="timeline-item"><span class="timeline-year">2025</span><div class="timeline-content"><h4>AI Scraper + Claw Agent UI</h4><p>Shodan-based Ollama hunter and custom Claude agent interface.</p></div></li>
         <li class="timeline-item"><span class="timeline-year">2025</span><div class="timeline-content"><h4>NefuSoft Web + App</h4><p>Anime platform with Jikan API, gamification, redesigned UX.</p></div></li>
         <li class="timeline-item"><span class="timeline-year">2024</span><div class="timeline-content"><h4>Bailey's WhatsApp Bot</h4><p>Plugin system, Groq AI, group management.</p></div></li>
